@@ -47,7 +47,7 @@ export default function IncrementalityDashboard() {
   if (!mounted) return <div className="min-h-screen bg-[#020203]" />;
 
   return (
-    <div className="min-h-screen bg-[#020203] text-zinc-100 font-mono selection:bg-indigo-500/30 overflow-x-hidden p-10">
+    <div className="min-h-screen bg-[#020203] text-zinc-100 font-mono selection:bg-indigo-500/30 overflow-x-hidden overflow-y-auto p-10">
       {/* Ambient Background Grid */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-0"
         style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}

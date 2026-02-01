@@ -2,7 +2,7 @@
 
 @theme {
   --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  
+
   --color-background: #020203;
   --color-foreground: #f4f4f5;
   --color-primary: #6366f1;
@@ -33,7 +33,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: auto;
   background-image:
     radial-gradient(circle at 50% -20%, rgba(229, 9, 20, 0.12) 0%, transparent 40%),
     radial-gradient(circle at 0% 0%, rgba(0, 242, 255, 0.05) 0%, transparent 30%),
@@ -224,9 +224,12 @@ body {
 
 /* Animations */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -253,6 +256,7 @@ body {
   from {
     transform: translateY(-200%);
   }
+
   to {
     transform: translateY(200vh);
   }
